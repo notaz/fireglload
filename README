@@ -1,0 +1,9 @@
+This is a tool for loading fglrx/Catalyst Xorg driver and initializing it.
+The goal of it is to get the driver to init hardware power saving without
+having to actually start the X server. This is useful for some AMD hardware
+like evergreen that starts without power saving enabled (and even runs at
+highest clocks) after reset and uses maximum fan speeds until the driver
+starts, configures things, uploads ucode and does whatever else it has to do.
+
+These days it's most likely better to just use the radeon driver, but I
+still keep fglrx on my machine for somewhat better performance.

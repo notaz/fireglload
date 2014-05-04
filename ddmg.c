@@ -1,0 +1,1 @@
+void ddmg(void *g) {}
